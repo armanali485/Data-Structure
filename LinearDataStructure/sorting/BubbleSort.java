@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class BubbleSort {
 	// 1. Bubble Sort
 	public static void bubbleSort(int[] arr) {
-		for (int i = 0; i < arr.length - 1; i++) {
+		for (int i = 1; i < arr.length ; i++) {
 			boolean swap = false;
-			for (int j = 0; j < arr.length - 1 - i; j++) {
+			for (int j = 1; j < arr.length- i; j++) {
 				if (arr[j] > arr[j + 1]) {
 					arr[j] = arr[j + 1] + arr[j] - (arr[j + 1] = arr[j]);
 					swap = true;
