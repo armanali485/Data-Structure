@@ -1,4 +1,4 @@
-```markdown
+
 # Searching Techniques
 
 Searching algorithms are essential components in programming used to locate specific items within a collection of data. Depending on the input array, there are two primary searching techniques:
@@ -64,4 +64,3 @@ int binarySearch(int arr[], int key) {
 ### Summary  
 - **Linear Search**: Simple but inefficient for large datasets (\( O(n) \)).  
 - **Binary Search**: Efficient (\( O(\log n) \)) but requires the array to be sorted beforehand.  
-```
