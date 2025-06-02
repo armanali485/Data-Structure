@@ -105,3 +105,37 @@ public boolean isEmpty(){
 - **Key Operations**: Push, Pop, Peek, isEmpty, isFull.  
 - **Errors**: Underflow (empty stack) and Overflow (full stack).  
 - **Applications**: Function calls, expression evaluation, undo/redo, backtracking, and syntax checking.  
+
+
+> 1. WAP to reverse a String Using Stack.
+```java
+    public static String reverseString(String str){
+    java.util.Stack<Character> stack = new java.util.Stack<>();
+    for(int i=0;i<str.length();i++){
+        stack.push(str.charAt(i));
+    }
+    StringBuilder sb = new StringBuilder();
+    while(!stack.isEmpty()){
+        sb.append((char)stack.pop());
+    }
+    return sb.toString();
+   }
+```
+
+> 2. WAP to RemoveAdjacentDuplicateCharacter from String.
+```java
+    public static String removeAdjacentDuplicates(String str) {
+    java.util.Stack<Character> stack = new java.util.Stack<>();
+    for (char ch : str.toCharArray()) {
+        if (!stack.isEmpty() && stack.peek().equals(ch))
+            stack.pop();
+        else 
+            stack.push(ch);
+      }
+    String result ="";
+    while(!stack.isEmpty()){
+        result = stack.pop() + result;
+    }
+    return result;
+   }
+```
