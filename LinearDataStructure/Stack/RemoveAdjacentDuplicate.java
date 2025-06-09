@@ -16,7 +16,7 @@ class RemoveAdjacentDuplicate {
     }
 
     public static void main(String[] args) {
-        String str = "baba";
+        String str = "baab";
         System.out.println(removeAdjacentDuplicates(str));
     }
 

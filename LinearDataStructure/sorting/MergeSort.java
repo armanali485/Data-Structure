@@ -36,7 +36,7 @@ public class MergeSort {
 			
 
 			
-			System.out.println("Insertion Sort");
+			System.out.println("Merge Sort");
 			System.out.println(Arrays.toString(arr));
 		    divide(arr, 0, arr.length-1);
 			System.out.println(Arrays.toString(arr));
